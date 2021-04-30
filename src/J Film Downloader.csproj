@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>J_Film_Downloader</RootNamespace>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon1.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icon1.png" />
+    <None Remove="logo.png" />
+    <None Remove="searchI.png" />
+    <None Remove="searchICO.png" />
+    <None Remove="searchICOR.png" />
+    <None Remove="trial.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="icon1.png" />
+    <Resource Include="logo.png" />
+    <Resource Include="searchI.png" />
+    <Resource Include="trial.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Flurl.Http" Version="3.0.1" />
+    <PackageReference Include="MaterialDesignThemes" Version="3.2.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+  </ItemGroup>
+
+</Project>
